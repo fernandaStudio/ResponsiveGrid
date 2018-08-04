@@ -40,27 +40,21 @@ body { margin: 5px; }
     grid-gap: 1px;
 }
 .grid > div.wrap-5 { 
--ms-grid-template-columns: repeat(5, 1fr);
 	grid-template-columns: repeat(5, 1fr); 
 }
 .grid > div.wrap-7 { 
--ms-grid-template-columns: repeat(7, 1fr);
 	grid-template-columns: repeat(7, 1fr); 
 }
 .grid > div.wrap-8 { 
--ms-grid-template-columns: repeat(8, 1fr);
 	grid-template-columns: repeat(8, 1fr); 
 }
 .grid > div.wrap-9 { 
--ms-grid-template-columns: repeat(9, 1fr);
 	grid-template-columns: repeat(9, 1fr); 
 }
 .grid > div.wrap-10 { 
--ms-grid-template-columns: repeat(10, 1fr);
 	grid-template-columns: repeat(10, 1fr); 
 }
 .grid > div.wrap-11 { 
--ms-grid-template-columns: repeat(11, 1fr);
 	grid-template-columns: repeat(11, 1fr); 
 }
 
@@ -154,7 +148,6 @@ p:hover { opacity: 1; }
 /*MEDIA QUERIES*/
 @media (max-width: 320px) {
   [class*='item-'] {
--ms-grid-column: span 12;
     grid-column: span 12;
     height: 35vh;
   }
@@ -162,13 +155,10 @@ p:hover { opacity: 1; }
  }
 @media (min-width: 576px) {
   .item-2, .item-4, .item-6, .item-12 { 
-  -ms-grid-column: span 6;
 	  grid-column: span 6; }
   .item-8 { 
-  -ms-grid-column: span 4;
 	  grid-column: span 4; }
   .item-10 { 
-  -ms-grid-column: span 5;
 	  grid-column: span 5; }
 /* HOVER */
 	.item-2 p:hover:after,
@@ -196,13 +186,10 @@ p:hover { opacity: 1; }
   [class*='item-'] {height: 17.1875em;}
   p {font-size: 10vw;}
   .item-3, .item-6 { 
-  -ms-grid-column: span 4;
 	  grid-column: span 4; }
-  .item-5 { 
-  -ms-grid-column: span 1;
+  .item-5 {
 	  grid-column: span 1; }
   .item-9, .item-12 { 
-  -ms-grid-column: span 3;
 	  grid-column: span 3; }
   /* HOVER */
   .item-3 p:hover:after,
@@ -354,7 +341,6 @@ p:hover { opacity: 1; }
 @media (min-width: 1200px) {
 	p { font-size: 3vw; }
 	.item-8, .item-9, .item-10, .item-12 { 
-	-ms-grid-column: span 1; 
 		grid-column: span 1; }
 	[class*='item-'] p:hover:after,
 	[class*='item-'] p:active:after { white-space: pre; font-size: 2vw; }
@@ -411,5 +397,5 @@ p:hover { opacity: 1; }
 
 }
 @media (min-width: 1900px) {
-	[class*='item-'] { height: 30em; }
+	[class*='item-'] { height: 35em; }
 }
